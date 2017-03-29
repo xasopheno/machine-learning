@@ -21,7 +21,7 @@ plt.ylabel('wcss')
 plt.show()
 
 # Applying k-means to the null dataset
-kmeans = KMeans(n_clusters = 5, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+kmeans = KMeans(n_clusters = 1, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
 y_kmeans = kmeans.fit_predict(X)
 
 # Visualizing the clusters
